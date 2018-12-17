@@ -40,7 +40,7 @@ public class GameView extends View implements View.OnTouchListener
     float bsx = 10;
     float bsy = 10;
     // Top bar speed
-    float tbs = 8;
+    float tbs = 7;
     //Score
     int tscore = 0;
     int bscore = 0;
@@ -108,7 +108,7 @@ public class GameView extends View implements View.OnTouchListener
             bsy = 40;
         if (bx - 20 == 0 || bx + 20 == screenWidth)
             bsx *= -1;
-        if (bx > (tbx + tbx + 500)/2)
+        if (bx > (tbx + tbx + 500) / 2)
             tbx += tbs;
         else
             tbx -= tbs;
